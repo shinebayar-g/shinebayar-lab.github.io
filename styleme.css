@@ -1,0 +1,13 @@
+h1, h2 {
+    font-family: 'Trebuchet MS', Verdana, Geneva, Tahoma, sans-serif;
+    color: #087c96;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #cdd2d4;
+}
+
+a {
+    color: red;
+}
