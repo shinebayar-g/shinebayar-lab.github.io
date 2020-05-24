@@ -1,0 +1,140 @@
+body {
+  background-image: url(background.png);
+  font-family: Verdana, Tahoma, serif;
+  font-size: 8pt;
+  margin: 0;
+  padding: 0;
+}
+
+#top {
+  background-image: url(bannerbg.png);
+  height: 50px;
+}
+
+#top img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 795px;
+  display: block;
+}
+
+h1 {
+  font-size: 24pt;
+  font-weight: bold;
+  font-family: Tahoma, Verdana, serif;
+  text-shadow: 3px 3px #999999;
+  text-align: center;
+}
+
+.main {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 4px;
+  border-radius: 20px;
+  border-color: gray;
+  border-style: solid;
+  overflow: auto;
+}
+
+.overview {
+  float: right;
+  max-width: 250px;
+  background-color: #a2b964;
+}
+
+.content {
+  max-width: 550px;
+}
+
+.content_header {
+  background-image: url(rbg.png);
+  height: 83px;
+  font-size: 48pt;
+  font-weight: bold;
+  color: red;
+}
+
+.content_header img {
+  vertical-align: bottom;
+}
+
+.reviews {
+  column-count: 2;
+  column-gap: 2%;
+  padding: 2%;
+  column-width: 47%;
+}
+
+.quote {
+  font-size: 8pt;
+  font-weight: bold;
+  background-color: #e8dc9b;
+  border-color: gray;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  padding: 8px;
+  overflow: auto;
+  clear: left;
+}
+
+.quote img {
+  float: left;
+  padding-right: 5px;
+
+}
+
+.publication {
+  font-style: italic;
+}
+
+/* reviewer icon */
+.reviews p:nth-child(even) img {
+  float: left;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.review p::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.review {
+    padding-bottom: 20px;
+}
+
+dl {
+  font-size: 8pt;
+  font-family: Arial, serif;
+  padding-left: 10pt;
+  padding-right: 10pt;
+}
+
+dt {
+  margin-top: 10pt;
+  font-weight: bold;
+}
+
+dd ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page {
+  clear: both;
+  background-color: #a2b964;
+  text-align: center;
+  margin: 0pt;
+  padding: 5px;
+}
+
+.validators {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  opacity: 50%;
+}
