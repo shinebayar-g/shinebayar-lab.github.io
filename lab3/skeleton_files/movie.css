@@ -63,7 +63,7 @@ h1 {
   column-count: 2;
   column-gap: 2%;
   padding: 2%;
-  column-width: 47%;
+  column-width: 0.47em;
 }
 
 .quote {
