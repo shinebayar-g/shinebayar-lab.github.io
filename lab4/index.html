@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Checkout form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="checkout">
+        <form action="" method="POST">
+            <h1>Personal Details</h1>
+
+            <div class="flex-container">
+                <div class="col-50">
+                    <div>
+                        <label>First Name:<input type="text" name="firstName" size="15px" placeholder="firstname"
+                                required></label>
+                    </div>
+                    <div>
+                        <label>Last Name:<input type="text" name="lastName" size="15px" placeholder="lastname"
+                                required></label>
+                    </div>
+                    <div>
+                        <label>Date of Birth: <input type="date" name="dateOfBirth"></label>
+                    </div>
+                    <div>
+                        <label>Email: <input type="email" name="email"></label>
+                    </div>
+                    <div>
+                        <label>Phone Number: <input type="tel" name="phone" pattern="(\(\d{3}\)\-\d{3}\-\d{4})"
+                                title="10 digit phone number" placeholder="(123)-123-1234" maxlength="15"
+                                required></label>
+                    </div>
+                </div>
+            </div>
+            <h1>Billing Address</h1>
+            <div>
+                <label>Address 1: <input type="text" name="billingAddress1" required></label>
+                <label>Address 2: <input type="text" name="billingAddress2"></label>
+            </div>
+
+            <div>
+                <label>City: <input type="text" name="billingCity" required></label>
+                <label>State: <input type="text" name="billingState" required></label>
+                <label>Zip: <input type="" name="billingZip" required></label>
+            </div>
+
+            <h1>Shipping Address</h1>
+            <label>Address 1: <input type="text" name="shippingAddress1"></label>
+            <label>Address 2: <input type="text" name="shippingAddress2"></label>
+            <label>City: <input type="text" name="shippingCity"></label>
+            <label>State: <input type="text" name="shippingState"></label>
+            <label>Zip: <input type="text" name="shippingZip"></label>
+
+            <h1>Payment Info</h1>
+            <fieldset>
+                <legend>Card Type: <br></legend>
+                <label><input type="radio" name="cc" value="visa" checked="checked" />Visa</label>
+                <label><input type="radio" name="cc" value="mastercard" />MasterCard</label>
+                <label><input type="radio" name="cc" value="amex" />American Express</label>
+                <label><input type="radio" name="cc" value="discover" />Discover</label>
+
+                <hr>
+                <label for="cardNum">Card Number:</label>
+                <input type="text" name="cardNum" id="cardNum" required>
+                <label for="cardName">Name on the Card:</label>
+                <input type="text" name="cardName" id="cardName" required>
+                <label for="cardExp">Expire Date:</label>
+                <input type="text" name="cardExp" id="cardExp" placeholder="MM/YY" required>
+                <label for="cardCVV">CVV:</label>
+                <input type="text" name="cardCVV" id="cardCVV" maxlength="3" required>
+            </fieldset>
+            <h1>Agreement</h1>
+            By placing your order, you agree to our <a href="">privacy notice</a> and <a href="">conditions of use</a>.
+            <input type="checkbox" name="agreement">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Checkout">
+        </form>
+    </div>
+</body>
+
+</html>
