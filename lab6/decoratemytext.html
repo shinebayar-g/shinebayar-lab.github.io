@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)http://mumstudents.org/cs472/2016-03-AS-KL/Labs/6/decoratemytext.html -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <style type="text/css">
+        @charset "UTF-8";
+
+        [ng\:cloak],
+        [ng-cloak],
+        [data-ng-cloak],
+        [x-ng-cloak],
+        .ng-cloak,
+        .x-ng-cloak,
+        .ng-hide:not(.ng-hide-animate) {
+            display: none !important;
+        }
+
+        ng\:form {
+            display: block;
+        }
+
+        .ng-animate-shim {
+            visibility: hidden;
+        }
+
+        .ng-anchor {
+            position: absolute;
+        }
+
+    </style>
+    <title>Text Decorator</title>
+    <link href="./decoratemytext_files/decoratemytext.css" type="text/css" rel="stylesheet">
+    <!--
+		This is a widely-used JavaScript library named jQuery that has
+		many useful functions which we need.
+		Please don't remove this link or change its URL; leave it as-is!
+		-->
+    <script src="./decoratemytext_files/jquery.min.js" type="text/javascript"></script>
+    <!-- link to your script file here -->
+    <script src="./decoratemytext_files/decoratemytext.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <h1>Text Decorator</h1>
+    <div>
+        <img src="./decoratemytext_files/decorated.gif" alt="very decorated!">
+    </div>
+    <!-- Your UI controls go here -->
+    <fieldset>
+        <legend>Text</legend>
+        <textarea rows="4" cols="30" id="textarea1"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>Decoration</legend>
+        <input onclick="setInterval(biggerDecoration, 500)" type="button" value="Bigger Decorations!"><br>
+        <label><input onchange="bling();" type="checkbox" name="Bigger Decorations!" id="bling"> Bling</label>
+    </fieldset>
+</body>
+
+</html>
