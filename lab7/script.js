@@ -1,11 +1,8 @@
 let accountInfoList = [];
 
 const accountCreator = (function () {
-    const createAccount = function () {
-        let account = {};
-        account.name = document.getElementById("account").value;
-        account.balance = document.getElementById("deposit").value;
-        accountInfoList.push(account);
+    const createAccount = function (name, balance) {
+        accountInfoList.push({name: name, balance: balance});
     };
 
     return {
@@ -14,7 +11,9 @@ const accountCreator = (function () {
 })();
 
 function createAccountHandler() {
-    accountCreator.createAccount();
+    let name = document.getElementById("account").value;
+    let balance = document.getElementById("deposit").value;
+    accountCreator.createAccount(name, balance);
     displayAccounts();
 }
 
